@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find phone number of VIettel</title>
+</head>
+<body>
+<script>
+    let phoneNumber =["0366112697","0332487193","0831234567"]
+    function checkNumber(str){
+        regexp = /^03[63][0-9]{7}$/;
+        if(regexp.test(str)){
+            return str + " la so viettel" +"<br>";
+        }else{
+            return str + " khong la so viettel" + "<br>";
+        }
+    }
+    for(let i=0; i<phoneNumber.length; i++){
+        document.write(checkNumber(phoneNumber[i]));
+    }
+</script>
+</body>
+</html>
